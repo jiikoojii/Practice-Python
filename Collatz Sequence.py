@@ -1,4 +1,4 @@
-import time
+import time, sys
 def collatz(number):
     if number % 2 == 0:
         print(number // 2)
@@ -10,7 +10,11 @@ def collatz(number):
 
 n = input("Give me a number: ")
 start_time = time.time()
-while n != 1:
-    n = collatz(int(n))
+try:
+    while n != 1:
+        n = collatz(int(n))
+except ValueError:
+    print("Give a number next time")
+    sys.exit()
 elapsed_time = time.time() - start_time
 print("It took", elapsed_time, " seconds to reach number 1")
