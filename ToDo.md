@@ -1,2 +1,2 @@
 # Collatz Sequence.py:
-	··* ~~Add try-expect block~~
+	~~Add try-expect block~~
