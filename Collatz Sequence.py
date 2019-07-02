@@ -8,13 +8,13 @@ def collatz(number):
         print(result)
         return result
 
-n = input("Give me a number: ")
+n = input("Give a number: ")
 start_time = time.time()
 try:
     while n != 1:
         n = collatz(int(n))
 except ValueError:
     print("Give a number next time")
-    sys.exit()
+    sys.exit() #This is so the last print doesn't run
 elapsed_time = time.time() - start_time
 print("It took", elapsed_time, " seconds to reach number 1")
