@@ -1,2 +1,2 @@
-# H1 Collatz Sequence.py:
-	*~~Add try-expect block~~
+# H3 Collatz Sequence.py:
+	* ~~Add try-expect block~~
