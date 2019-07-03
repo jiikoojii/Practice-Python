@@ -1,6 +1,7 @@
-import sys, time, os
+import sys, time
 x = 0
 y = 0
+
 def add():
     print("Give the first number")
     x = int(input())
@@ -9,6 +10,7 @@ def add():
     z = x + y
     print("Addition of", x, " and ", y, "equals =", z)
     time.sleep(1)
+
 def sub():
     print("Give the first number")
     x = int(input())
@@ -17,6 +19,7 @@ def sub():
     z = x - y
     print("Subtraction of", x, " and ", y, "equals =", z)
     time.sleep(1)
+
 def mul():
     print("Give the first number")
     x = int(input())
@@ -25,6 +28,7 @@ def mul():
     z = x * y
     print("Multiplication of", x, " and ", y, "equals =", z)
     time.sleep(1)
+
 def div():
     print("Give the first number")
     x = int(input())
@@ -33,16 +37,14 @@ def div():
     z = x / y
     print("Division of", x, " and ", y, "equals =", z)
     time.sleep(1)
-def clear():
-    os.system('cls')
+
 while True:
     print('''
     1. Add
     2. Sub
     3. Mul
     4. Div
-    5. Exit
-    6. Clear screen''')
+    5. Exit''')
     choice = input()
     if choice == '1':
         add()
@@ -54,7 +56,5 @@ while True:
         div()
     elif choice == '5':
         sys.exit()
-    elif choice == '6':
-        clear()
     else:
         print("Give a number between 1 and 5")
