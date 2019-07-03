@@ -10,7 +10,7 @@ def add():
     z = x + y
     print("Addition of", x, " and ", y, "equals =", z)
     time.sleep(1)
-
+#time.sleep is so the answer is clearly visible for a moment before selection comes back
 def sub():
     print("Give the first number")
     x = int(input())
@@ -58,3 +58,4 @@ while True:
         sys.exit()
     else:
         print("Give a number between 1 and 5")
+        #Only accepts input of 1 to 5, anything else prints the line above
